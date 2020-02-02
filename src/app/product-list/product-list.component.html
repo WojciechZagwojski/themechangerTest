@@ -1,0 +1,15 @@
+<h2>Themes</h2>
+
+<div *ngFor="let theme of theme">
+
+  <h3>
+    <a [title]="theme.name + ' details'">
+      {{ theme.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="theme.description">
+    Description: {{ theme.description }}
+  </p>
+
+</div>
